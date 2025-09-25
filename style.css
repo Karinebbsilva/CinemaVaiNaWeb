@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*
+comentários de varias linhas
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 150px;
+}
+
+.título {
+  color: red;
+}
+
+#btn1 {
+  background-color: purple;
+}
+/*# sourceMappingURL=style.css.map */

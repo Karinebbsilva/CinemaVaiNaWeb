@@ -1,0 +1,31 @@
+//seletor {propriedade:valor;}
+// comentario de apenas uma linha;
+/*
+comentários de varias linhas
+*/
+
+// * é um seletor global, ele seleciona todos os elementos da página deu vez.Geralmente é usado para aplicar um estilo "global" ou resetar padrões de navegadores
+*{
+margin: 0; 
+// espaçamento externo das tags;zera a margem padrão dos elementos 
+padding: 0;
+// espaçamento interno das tags;zera o padding padrão dos elementos
+box-sizing: border-box;
+// Faz o cálculo correto dos tamanhos dos elementos; Inclui padding e border na largura e altura totais dos elementos
+}
+
+//seletor (propriedade:valor;)
+//tag = seletor
+img{
+    width: 150px;
+}
+
+// .class = seletor;é um seletor que seleciona elementos HTML com a classe especificada. Pode ser usado em múltiplos elementos. pode usar mais de uma vez, em outras tags.
+.título{
+    color:red;
+}
+
+// #id - seletor; id sempre único, uma identificação diferente 
+#btn1{
+    background-color: purple;
+}
