@@ -1,31 +1,113 @@
 //seletor {propriedade:valor;}
 // comentario de apenas uma linha;
-/*
-comentários de varias linhas
-*/
-
-// * é um seletor global, ele seleciona todos os elementos da página deu vez.Geralmente é usado para aplicar um estilo "global" ou resetar padrões de navegadores
+// #id - seletor; id sempre único, uma identificação diferente 
+// * é um seletor global, ele seleciona todos os elementos da página deu vez.Geralmente é usado para aplicar um estilo "global" ou resetar padrões de navegadores.
 *{
 margin: 0; 
-// espaçamento externo das tags;zera a margem padrão dos elementos 
+// espaçamento externo das tags;zera a margem padrão dos elementos.
+
 padding: 0;
 // espaçamento interno das tags;zera o padding padrão dos elementos
+
 box-sizing: border-box;
 // Faz o cálculo correto dos tamanhos dos elementos; Inclui padding e border na largura e altura totais dos elementos
-}
 
-//seletor (propriedade:valor;)
-//tag = seletor
-img{
-    width: 150px;
 }
 
 // .class = seletor;é um seletor que seleciona elementos HTML com a classe especificada. Pode ser usado em múltiplos elementos. pode usar mais de uma vez, em outras tags.
-.título{
-    color:red;
+
+body{ 
+    background-color: #0d0d0d; // Cor de fundo da página.
 }
 
-// #id - seletor; id sempre único, uma identificação diferente 
-#btn1{
-    background-color: purple;
+header{
+    background-color: #6a040f; // cor de fundo da header.
+    text-align: center; // Alinha o texto no centro da página.
+    padding: 20px ; // espaçamento interno do cabeçalho.
+    margin-bottom: 25px; // espaçamento externo do cabeçalho.
+    border-bottom: #9a0d1b solid 10px; // borda de baixo do cabeçalho.
+    border-top: #9a0d1b solid 10px; // borda de cima do cabeçalho.
+}
+
+.title{ // título "Cinema VNW"
+    color: #f0e7d5; // cor do título
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; // fonte do título
+    font-size: 40px
+}
+
+.title2{ // titulo 'top 3 : losing your mind"
+    color: #f0e7d5; // cor do título
+    font-family: 'Courier New', Courier, monospace; // fonte do título
+    font-size: 20px;
+}
+
+// Organização dos cards na página
+.box-movie{
+    display: flex; // deixar o layout flexível;
+    flex-direction: row; // alinha os cards em uma linha horizontal.
+    justify-content: center; // centraliza os cards na horizontal.
+    flex-wrap: wrap; // Permite que os cards quebrem para a próxima linha se não couberem.
+    gap: 20px; // espaçamento entre os cards.
+    padding: 0 20px; // espaçamento interno das laterais do container.
+}
+
+.movie img{ 
+    width: 250px; // tamanho fixo das imagens dos cards.
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+// organização de cada card
+.movie{
+    display: flex; // layout flexível
+    flex-direction: column; // alinha os itens do card em coluna vertical.
+    align-items: center; // centraliza de forma horizontal os itens dentro do card.
+
+    transition: background-color 0.3s ease; // transição ao passar o mouse.
+    width: 300px; // largura fix dos cards.
+    padding-top: 20px;
+    text-align: center; // centraliza o texto dentro dos cards.
+    background-color: #9a0d1b;
+    border-radius: 10px; // arendodação das bordas dos cards.
+    box-shadow: 2px 2px 10px #6a040f;
+}
+
+.movie:hover { 
+    background-color: #0d0d0d;
+}
+
+.movie h2 { 
+font-size: 25px; // tamanho da fonte dos títulos dos filmes.
+margin-bottom: 15px; // espaçamente acima do "compre seu ingresso"
+color: #f0e7d5;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.movie button{
+    background-color: #f0e7d5; // cor do fundo do botão.
+    color: #6a040f; // cor da fonte 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; // tipo de fonte do botão.
+    font-size: 15px; // tamanho da fonte.
+    border-radius: 10px; // borda arredondada do botão.
+    padding: 5px 15px; // espaçamento interno do botão.
+    border: none; // linha de borda retirada.
+    cursor: pointer; // Muda o cursor para indicar que é clicável.
+    transition: background-color 0.3s ease; // Transição suave para a mudança de cor ao passar o mouse.
+    margin-bottom: 20px;
+}
+
+// efeito do botão 
+.movie button:hover {
+    background-color: #0d0d0d;
+}
+
+footer{
+    text-align: center;
+    background-color: #6a040f;
+    border-top: #9a0d1b 3px solid;
+    border-bottom: #9a0d1b 3px solid;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
