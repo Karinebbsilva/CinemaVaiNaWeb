@@ -13,7 +13,8 @@ Esse mini-projeto envolve um catálogo de filmes em "cartaz" para apresentar no 
 
 
 
-[imagem do projeto](Users/BRAYAN/Pictures/Screenshots/Projeto%20Pronto.png)
+<img width="1902" height="866" alt="Projeto Pronto" src="https://github.com/user-attachments/assets/3e7616be-98cc-4da1-9317-32cf8aa85bd6" />
+
 
 
 ## Stack utilizada
