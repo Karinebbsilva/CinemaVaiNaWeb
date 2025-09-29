@@ -13,7 +13,7 @@ Esse mini-projeto envolve um catálogo de filmes em "cartaz" para apresentar no 
 
 
 
-<img width="1366" height="643" alt="img-projeto-pronto" src="file:///C:/Users/BRAYAN/Pictures/Screenshots/Captura%20de%20tela%202025-09-28%20220406.png"/>
+[imagem do projeto](file:///C:/Users/BRAYAN/Pictures/Screenshots/Projeto%20Pronto.png)
 
 
 ## Stack utilizada
